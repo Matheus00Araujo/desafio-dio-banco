@@ -6,8 +6,8 @@ public class ContaCorrente extends Conta {
 		super(cliente, agencia);
 	}
 
-	@Override
-	public void imprimirExtrato() {
+	public void imprimirDadosConta() {
+		super.imprimirDadosConta("Corrente");
 	}
 	
 }
