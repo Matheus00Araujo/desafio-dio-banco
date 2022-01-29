@@ -3,22 +3,24 @@ import java.util.List;
 
 public class Banco {
 
-	private String nome;
-	private List<Conta> contas;
+	private final String nome;
+	private List<Agencia> agencias;
+
+	public Banco(String nome) {
+		this.nome = nome;
+	}
 
 	public String getNome() {
 		return nome;
 	}
 
-	public void setNome(String nome) {
-		this.nome = nome;
+	public List<Agencia> getAgencias() {
+		return agencias;
 	}
 
-	public List<Conta> getContas() {
-		return contas;
+	public void setAgencias(List<Agencia> agencias) {
+		this.agencias = agencias;
 	}
 
-	public void setContas(List<Conta> contas) {
-		this.contas = contas;
-	}
+	
 }
