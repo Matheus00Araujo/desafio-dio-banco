@@ -3,16 +3,16 @@ package Entidades;
 import java.util.List;
 
 public class Agencia {
-	
+	private static int SEQUENCIAL = 1;
 	
 	private final Banco banco;
 	private final int numero;
 	private Endereco endereco;
 	private List<Conta> contas;
 	
-	public Agencia(Banco banco, int numero, Endereco endereco) {
+	public Agencia(Banco banco, Endereco endereco) {
 		this.banco = banco;
-		this.numero = numero;
+		this.numero = SEQUENCIAL++;
 		this.endereco = endereco;
 	}
 
